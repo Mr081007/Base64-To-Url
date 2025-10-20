@@ -104,7 +104,9 @@ Value (值): 输入一个高强度的密钥字符串（这是您的上传密码�
 用于通过 URL 访问已上传的图片。
 
 属性值描述URL[Your_Worker_URL]/[unique_file_id].[ext]
+
 例如：`https://example.workers.dev/a1b2c3d4-e5f6-7890-abcd-ef0123456789.png`
+
 方法GET响应返回图片文件本身。允许公开访问。
 
 ⚠️ 安全与注意事项

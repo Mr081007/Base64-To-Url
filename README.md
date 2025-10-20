@@ -9,8 +9,9 @@
 
 一个轻量、安全、高性能的 Cloudflare Worker 服务，用于接收 Base64 编码的图片数据，将其存储到 Cloudflare R2 存储桶，并返回公开访问的 URL。
 
-该服务利用 Cloudflare 的全球网络，实现零出口费用（Zero Egress Fee）的图片存储和高速分发。
-
+该服务利用 Cloudflare 的全球网络，实现零出口费用（Zero Egress Fee）的图片存储和高速分发。  
+  
+  
 ✨ 主要特性
 
 安全认证 (Secret Key)：所有上传请求必须在 Header 中携带预设的密钥（X-Auth-Key），确保只有授权用户才能上传。
@@ -21,7 +22,9 @@
 
 自动文件类型识别：根据 Base64 前缀自动识别图片类型（如 png, jpeg, gif 等），并设置正确的 Content-Type。
 
-高速分发：图片通过 Cloudflare 全球 CDN 分发，实现极低延迟。
+高速分发：图片通过 Cloudflare 全球 CDN 分发，实现极低延迟。  
+  
+  
 
 🛠️ 部署步骤（Cloudflare Dashboard 部署）
 
@@ -73,7 +76,8 @@ Secret name (密钥名称): AUTH-SECRET-KEY
 
 Value (值): 输入一个高强度的密钥字符串（这是您的上传密码）。
 
-点击 Add。
+点击 Add。  
+  
 
 💻 API 使用说明
 

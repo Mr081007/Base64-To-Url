@@ -12,7 +12,7 @@
 该服务利用 Cloudflare 的全球网络，实现零出口费用（Zero Egress Fee）的图片存储和高速分发。  
   
   
-✨ ## 主要特性
+### ✨主要特性
 
 安全认证 (Secret Key)：所有上传请求必须在 Header 中携带预设的密钥（X-Auth-Key），确保只有授权用户才能上传。
 
@@ -26,7 +26,7 @@
   
   
 
-🛠️ 部署步骤（Cloudflare Dashboard 部署）
+### 🛠️ 部署步骤（Cloudflare Dashboard 部署）
 
 您无需安装任何本地工具，即可通过 Cloudflare 控制台快速部署此服务。
 
@@ -44,7 +44,7 @@
 
 服务名称： 命名一个您喜欢的名称，例如 r2-image-uploader。
 
-点击 Edit code，将您的完整 Worker 代码粘贴进去。
+点击 Edit code，将项目中的完整 Worker.js 代码粘贴进去。
 
 点击 Save and Deploy。
 
@@ -79,7 +79,7 @@ Value (值): 输入一个高强度的密钥字符串（这是您的上传密码�
 点击 Add。  
   
 
-💻 API 使用说明
+### 💻 API 使用说明
 
 您的 Worker 部署成功后，将提供两个 API 接口：
 
